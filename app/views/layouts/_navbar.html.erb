@@ -28,16 +28,16 @@
       <div class="menu_dropdown">
         <ul>
           <% unless user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+          <li class="bob-item">
+            <%= link_to "Log in", new_user_session_path, class: "blob-link" %>
 
           </li>
-          <li class="nav-item">
-            <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+          <li class="bob-item">
+            <%= link_to "Sign up", new_user_registration_path, class: "blob-link" %>
           </li>
           <% else %>
-          <li class="nav-item">
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+          <li class="bob-item">
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "blob-link" %>
           </li>
           <% end %>
         </ul>

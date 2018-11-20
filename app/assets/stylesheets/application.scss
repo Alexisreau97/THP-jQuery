@@ -41,3 +41,71 @@
 #content {
 	display: block;
 }
+
+.carousel {
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  position: relative;
+  .food-pics {
+    position: relative;
+    left: -650px;
+    transition: .7s;
+  }
+  img {
+    height: 450px;
+    width: auto;
+  }
+  .arrows {
+    position: absolute;
+    top: 225px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: grey;
+    z-index: 2;
+    :hover {
+      color: white;
+    }
+  }
+  .previous {
+    left: 155px;
+  }
+  .next {
+    right: 170px;
+  }
+}
+.image-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+button.image-dot {
+  border-radius: 50%;
+  border: none;
+  background: none;
+  font-size: 25px;
+  color: white;
+  z-index: 2;
+}
+button:focus {
+  outline: none;
+}
+.active-dot {
+  color: grey !important;
+}
+.carousel .previous {
+    left: 155px;
+}
+.carousel .arrows {
+    position: absolute;
+    /* top: 225px; */
+    border-radius: 50%;
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: grey;
+    z-index: 2;
+}

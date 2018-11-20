@@ -4,3 +4,36 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "components/*";
+
+
+
+.container1 {
+	margin: 2% 5%;
+}
+
+#tabs {
+	color: black;
+	list-style-type: none;
+}
+
+#tabs li {
+	display: inline-block;
+}
+
+#tabs a {
+	background-color: #eee;
+	border-radius: 10px;
+	margin: 4px 6px;
+	padding: 4px 6px;
+	color: black;
+	text-decoration: none;
+	opacity: 1;
+}
+
+#tabs a:hover {
+	opacity: 0.8;
+}
+
+#content {
+	display: block;
+}

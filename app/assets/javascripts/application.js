@@ -26,9 +26,9 @@ $(document).ready(function() {
     $('#tabs li a').click(function(e) {
         e.preventDefault();
         if ($(this).attr("id") == "current"){ //detection for current tab
-         return       
+         return
         }
-        else{             
+        else{
         $("#content div").hide(); //Hide all content
         $("#tabs li").attr("id",""); //Reset id's
         $(this).parent().attr("id","current"); // Activate this
